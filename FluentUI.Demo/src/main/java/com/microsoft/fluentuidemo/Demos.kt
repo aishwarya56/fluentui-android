@@ -6,19 +6,27 @@
 package com.microsoft.fluentuidemo
 
 import com.microsoft.fluentuidemo.demos.*
+import com.microsoft.fluentuidemo.vNextDemos.AvatarViewDemoActivity
+import com.microsoft.fluentuidemo.vNextDemos.BasicInputsDemoActivity
 import java.util.*
 import kotlin.reflect.KClass
 
 const val ACTION_BAR_LAYOUT = "ActionBarLayout"
 const val APP_BAR_LAYOUT = "AppBarLayout"
 const val AVATAR_VIEW = "AvatarView"
+const val V_NEXT_AVATAR_VIEW = "VNext AvatarView"
+const val AVATAR_GROUP_VIEW = "AvatarGroupView"
 const val BASIC_INPUTS = "Basic Inputs"
+const val V_NEXT_BASIC_INPUTS = "VNext Basic Inputs"
 const val BOTTOM_NAVIGATION = "BottomNavigation"
 const val BOTTOM_SHEET = "BottomSheet"
 const val CALENDAR_VIEW = "CalendarView"
+const val CONTEXTUAL_COMMAND_BAR = "ContextualCommandBar"
 const val DATE_TIME_PICKER = "DateTimePicker"
 const val DRAWER = "Drawer"
+const val V_NEXT_DRAWER = "VNext Drawer"
 const val LIST_ITEM_VIEW = "ListItemView"
+const val V_NEXT_LIST_ITEM_VIEW = "VNext ListItemView"
 const val PEOPLE_PICKER_VIEW = "PeoplePickerView"
 const val PERSISTENT_BOTTOM_SHEET = "PersistentBottomSheet"
 const val PERSONA_CHIP_VIEW = "PersonaChipView"
@@ -36,10 +44,14 @@ val DEMOS = arrayListOf(
     Demo(ACTION_BAR_LAYOUT, ActionBarLayoutActivity::class),
     Demo(APP_BAR_LAYOUT, AppBarLayoutActivity::class),
     Demo(AVATAR_VIEW, AvatarViewActivity::class),
+    Demo(V_NEXT_AVATAR_VIEW, AvatarViewDemoActivity::class),
+    Demo(AVATAR_GROUP_VIEW, AvatarGroupViewActivity::class),
     Demo(BASIC_INPUTS, BasicInputsActivity::class),
+    Demo(V_NEXT_BASIC_INPUTS, BasicInputsDemoActivity::class),
     Demo(BOTTOM_NAVIGATION, BottomNavigationActivity::class),
     Demo(BOTTOM_SHEET, BottomSheetActivity::class),
     Demo(CALENDAR_VIEW, CalendarViewActivity::class),
+    Demo(CONTEXTUAL_COMMAND_BAR, ContextualCommandBarActivity::class),
     Demo(DATE_TIME_PICKER, DateTimePickerActivity::class),
     Demo(DRAWER, DrawerActivity::class),
     Demo(LIST_ITEM_VIEW, ListItemViewActivity::class),
@@ -60,7 +72,10 @@ val DEMOS = arrayListOf(
 val DUO_DEMOS = arrayListOf(
     Demo(APP_BAR_LAYOUT, AppBarLayoutActivity::class),
     Demo(BOTTOM_SHEET, BottomSheetActivity::class),
+    Demo(CALENDAR_VIEW, CalendarViewActivity::class),
     Demo(DRAWER, DrawerActivity::class),
+    Demo(PEOPLE_PICKER_VIEW, PeoplePickerViewActivity::class),
+    Demo(DATE_TIME_PICKER, DateTimePickerActivity::class),
     Demo(POPUP_MENU, PopupMenuActivity::class),
     Demo(SNACKBAR, SnackbarActivity::class),
     Demo(TOOLTIP, TooltipActivity::class)

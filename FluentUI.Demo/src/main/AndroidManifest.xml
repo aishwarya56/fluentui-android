@@ -30,10 +30,12 @@
         <activity android:name="com.microsoft.fluentuidemo.demos.ActionBarLayoutActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.AppBarLayoutActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.AvatarViewActivity" />
+        <activity android:name="com.microsoft.fluentuidemo.demos.AvatarGroupViewActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.BasicInputsActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.BottomNavigationActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.BottomSheetActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.CalendarViewActivity" />
+        <activity android:name="com.microsoft.fluentuidemo.demos.ContextualCommandBarActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.DateTimePickerActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.DrawerActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.ListItemViewActivity" />
@@ -53,6 +55,10 @@
         <activity android:name="com.microsoft.fluentuidemo.demos.TooltipActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.TypographyActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.actionbar.ActionBarDemoActivity"/>
+
+        <!-- Vnext Demos Activity -->
+        <activity android:name="com.microsoft.fluentuidemo.vNextDemos.BasicInputsDemoActivity" />
+        <activity android:name="com.microsoft.fluentuidemo.vNextDemos.AvatarViewDemoActivity" />
 
     </application>
 

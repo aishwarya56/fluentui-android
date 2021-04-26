@@ -11,7 +11,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.Drawable
 import android.net.Uri
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import com.microsoft.fluentui.persona.IAvatar
 import com.microsoft.fluentui.persona.IPersona
 import com.microsoft.fluentui.persona.Persona
@@ -209,15 +209,6 @@ data class CustomPersona(override var name: String = "", override var email: Str
     var description: String = ""
     override var subtitle: String = ""
     override var footer: String = ""
-    override var avatarImageBitmap: Bitmap? = null
-    override var avatarImageDrawable: Drawable? = null
-    override var avatarImageResourceId: Int? = null
-    override var avatarImageUri: Uri? = null
-    override var avatarBackgroundColor: Int? = null
-}
-
-data class Avatar(override var name: String) : IAvatar {
-    override var email: String = ""
     override var avatarImageBitmap: Bitmap? = null
     override var avatarImageDrawable: Drawable? = null
     override var avatarImageResourceId: Int? = null
