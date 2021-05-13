@@ -12,6 +12,7 @@ steps:
     script: |
       # Write your commands here
       sudo bash -c "echo '$GPG_KEY_CONTENT' | base64 -d > '$SIGNING_SECRET_KEY_RING_FILE'"
+      ls
 - task: Gradle@2
   displayName: 'gradlew build publish'
   inputs:
