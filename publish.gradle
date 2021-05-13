@@ -45,13 +45,6 @@ project.ext.publishingFunc = { artifactIdName ->
     publishing {
         repositories {
             maven {
-                url 'https://pkgs.dev.azure.com/microsoftdesign/fluentui-native/_packaging/fluentui-android/maven/v1'
-                credentials {
-                    username = project.hasProperty("mavenUserName") ? "$mavenUserName" : ""
-                    password = project.hasProperty("mavenPassword") ? "$mavenPassword" : ""
-                }
-            }
-            maven {
                 name = "sonatype"
                 url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
                 credentials {
