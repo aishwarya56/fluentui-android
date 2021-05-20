@@ -24,33 +24,9 @@ if (secretPropsFile.exists()) {
     ext["sonatypeStagingProfileId"] = project.hasProperty('SonatypeStagingProfileID') ? "$SonatypeStagingProfileID" : ''
 }
 
-
-project.ext.bintrayPublishFunc = { bintrayContext, aarName ->
-    bintrayContext.user = project.hasProperty('bintrayUser') ? "$bintrayUser" : ""
-    bintrayContext.key = project.hasProperty('bintrayKey') ? "$bintrayKey" : ""
-    bintrayContext.publications = ['FluentUI']
-    bintrayContext.publish = true
-    bintrayContext.override = true
-    bintrayContext.pkg {
-        repo = 'generic'
-        name = aarName
-        version {
-            name = android.defaultConfig.versionName
-            vcsTag = android.defaultConfig.versionName
-        }
-    }
-}
-
 project.ext.publishingFunc = { artifactIdName ->
     publishing {
         repositories {
-            maven {
-                url 'https://pkgs.dev.azure.com/microsoftdesign/fluentui-native/_packaging/fluentui-android/maven/v1'
-                credentials {
-                    username = project.hasProperty("mavenUserName") ? "$mavenUserName" : ""
-                    password = project.hasProperty("mavenPassword") ? "$mavenPassword" : ""
-                }
-            }
             maven {
                 name = "sonatype"
                 url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
